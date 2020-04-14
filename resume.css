@@ -14,7 +14,7 @@ em {
 }
 
 .header {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: rgb(98, 98, 252);
     color: white;   
 }
@@ -56,7 +56,7 @@ div.contacts {
 }
 
 .main {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     max-width: 1000px;
     margin: auto;
 }
