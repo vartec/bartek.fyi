@@ -132,6 +132,12 @@ span.dates:before {
     font-size: 1.1em;
 }
 
+.print-only {
+    display: none;
+}
+
+
+
 @media print
 {    
     .download, .download *
@@ -161,5 +167,15 @@ span.dates:before {
 
     .pagebreak {
         page-break-after: always;
+    }
+    
+    .print-only {
+        display: inline;
+    }
+
+    .continued {
+        font-weight: 100;
+        font-size: .7em;
+        padding-top: .3em;
     }
 }
