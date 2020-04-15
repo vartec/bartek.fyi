@@ -22,8 +22,8 @@ em {
     color: white;   
 }
 div.header {
-    columns: 2 400px;
-    max-width: 1000px;
+    columns: 2 30rem;
+    max-width: 65rem;
     margin: auto;
 }
 
@@ -32,18 +32,18 @@ div.name-role {
 } 
 .header .name-role h1 {
     font-size: 3em;
-    margin: 10px;
+    margin: .7rem;
 }
 .header .name-role h2 {
     font-size: 2em;
-    margin: 10px;
+    margin: .7rem;
 }
 div.contacts {
     float: right;
-    width: 300px;
+    width: 16em;
 }
 .contacts li {
-    padding-top: 10px;
+    padding-top: .7rem;
 }
 #location {
     list-style-type: "🌎 ";
@@ -59,7 +59,7 @@ div.contacts {
 }
 
 .main {
-    max-width: 1000px;
+    max-width: 65rem;
     margin: auto;
 }
 
@@ -68,7 +68,7 @@ div.contacts {
 }
 
 div.experience {
-    max-width: 900px;
+    max-width: 60rem;
     margin: auto;
 }
 .experience h2 {
@@ -90,8 +90,10 @@ span.location {
     font-style: italic;
 }
 span.dates {
-    font-weight: lighter;
     font-size: .8em;
+}
+span.dates:before {
+    content: '';
     display: block;
 }
 .experience p, ul {
@@ -102,7 +104,7 @@ span.dates {
 .download {
     background-color: lightslategrey;
     text-align: center;
-    max-width: 1000px;
+    max-width: 65rem;
     margin: auto;
     margin-block-start: 3em;
 }
@@ -123,11 +125,11 @@ span.dates {
     }
     .header .name-role h1 {
         font-size: 2.5em;
-        margin: 5px;
+        margin: .3rem;
     }
     .header .name-role h2 {
         font-size: 1.7em;
-        margin: 5px;
+        margin: .3rem;
     }
     .pagebreak {
         page-break-after: always;
