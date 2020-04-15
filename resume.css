@@ -84,8 +84,9 @@ span.location {
     font-style: italic;
 }
 span.dates {
-    font-style: italic;
     font-weight: lighter;
+    font-size: .9em;
+    display: block;
 }
 .experience p, ul {
     margin-block-start: 0;
@@ -108,9 +109,6 @@ span.dates {
     .header {
         background-color: inherit;
         color: inherit;   
-    }
-    span.dates {
-        display: block;
     }
     .pagebreak {
         page-break-after: always;
