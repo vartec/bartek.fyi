@@ -4,6 +4,11 @@ body {
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
+ul {
+    margin-left: 0;
+    padding-left: 2em;
+}
+
 a {
     color: inherit;
     text-decoration: inherit;
@@ -20,32 +25,40 @@ em {
 .header {
     background-color: rgb(98, 98, 252);
     color: white;   
+    padding: 1rem;
 }
 div.header {
-    columns: 2 30rem;
     max-width: 65rem;
     margin: auto;
 }
 
-div.name-role {
-    display: inline-block;
-} 
-.header .name-role h1 {
-    font-size: 3em;
-    margin: .7rem;
+.header .name-role {
+    font-size: 1.5rem;
 }
-.header .name-role h2 {
-    font-size: 2em;
-    margin: .7rem;
+.header .name-role .role {
+    float: right;
+    font-weight: normal;
 }
 div.contacts {
     float: right;
-    width: 16em;
-    margin-block-end: 0.5rem;
+    width: 14rem;
+    /* padding-bottom: 2rem; */
+    border-left: 0.05rem;
+    border-style: none none none solid;
+}
+.contacts h2 {
+    margin: 0 0 .5rem 1rem;
+    list-style-type: none;
 }
 .contacts li {
-    padding-top: .7rem;
+    padding-top: .2rem;
+    padding-left: 0;
+    list-style-type: none;
 }
+.contacts ul {
+    padding-left: 1rem;
+}
+
 #location {
     list-style-type: "🌎 ";
 }
@@ -69,7 +82,7 @@ div.contacts {
 }
 
 .main h1 {
-    margin-block-end: .2em;
+    margin-block-end: .1em;
 }
 
 div.experience {
@@ -79,7 +92,8 @@ div.experience {
 .experience h2 {
     font-weight: normal;
     font-size: 1.5em;
-    margin-block-end: .5em;
+    margin-block-end: .4em;
+    margin-block-start: .4em;
 }
 .experience span {
     white-space: nowrap;
@@ -127,15 +141,24 @@ span.dates:before {
     .header {
         background-color: inherit;
         color: inherit;   
+        padding: 0;
+        padding-bottom: 1rem;
     }
-    .header .name-role h1 {
-        font-size: 2.5em;
-        margin: .3rem;
+
+    .header .name-role {
+        font-size: 1.2rem;
     }
-    .header .name-role h2 {
-        font-size: 1.7em;
-        margin: .3rem;
+
+    .header .name-role .role {
+        font-size: .8em;
+        padding-top: .2em;
     }
+
+    div.contacts {
+        /* padding-bottom: 4rem; */
+        margin-left: 2em;
+    }
+
     .pagebreak {
         page-break-after: always;
     }
