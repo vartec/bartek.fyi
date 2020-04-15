@@ -61,6 +61,10 @@ div.contacts {
     margin: auto;
 }
 
+.main h1 {
+    margin-block-end: .2em;
+}
+
 div.experience {
     max-width: 900px;
     margin: auto;
@@ -68,7 +72,7 @@ div.experience {
 .experience h2 {
     font-weight: normal;
     font-size: 1.5em;
-    margin-block-end: .1em;
+    margin-block-end: .5em;
 }
 .experience span {
     white-space: nowrap;
@@ -85,7 +89,7 @@ span.location {
 }
 span.dates {
     font-weight: lighter;
-    font-size: .9em;
+    font-size: .8em;
     display: block;
 }
 .experience p, ul {
@@ -94,10 +98,16 @@ span.dates {
 }
 
 .download {
-    margin-block-start: 3em;
     background-color: lightslategrey;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    margin-block-start: 3em;
+}
+
+.tagline {
+    font-size: 1.1em;
 }
 
 @media print
@@ -109,6 +119,14 @@ span.dates {
     .header {
         background-color: inherit;
         color: inherit;   
+    }
+    .header .name-role h1 {
+        font-size: 2em;
+        margin: 5px;
+    }
+    .header .name-role h2 {
+        font-size: 1.5em;
+        margin: 5px;
     }
     .pagebreak {
         page-break-after: always;

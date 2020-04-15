@@ -2,7 +2,7 @@
     <head>
         <title>Bartlomiej Ogryczak - Résumé</title>
         <meta property="og:title" content="Bartlomiej Ogryczak - Résumé"/>
-        <meta property="og:description" content="Senior Engineer with 20+ of back-end experience building and scaling cloud services"/>
+        <meta property="og:description" content="Seasoned engineer with 20+ years of programming experience, 15 years building and scaling high-traffic distributed services"/>
         <link rel="stylesheet" type="text/css" href="resume.css">
         <meta charset="utf-8">
     </head>
@@ -11,8 +11,6 @@
             <div class="name-role">
                 <h1><span title="preferred name Bartek, pronounced bar-tech">Bartlomiej</span>
                     <span title="pronounced og-ree-chuck">Ogryczak</span></h1>
-            </div>
-            <div class="name-role">
                 <h2>Senior Back-end Engineer</h2>
             </div>
             <div class="contacts">
@@ -23,10 +21,11 @@
                     <li id="linkedin"><a href="https://linkedin.com/in/bogryczak/">linkedin.com/in/bogryczak/</a></li>
                 </ul>
             </div>
+
         </div>
         <div class="main">
             <h1>Professional Experience</h1>
-
+            <div class="tagline">Seasoned engineer with 20+ years of programming experience, 15 years building and scaling high-traffic distributed services.</div>
             <div class="experience">
                 <h2>
                     <span class="position">Senior Software Engineer II</span> at
@@ -37,30 +36,33 @@
                 <p>
                     Key member of <em>Backend Foundry squad / Infrastructure team</em>, responsible for spearheading adoption and
                     implementation of architectural solutions enabling Eventbrite to operate at scale, while helping engineers
-                    move faster.<br/>
-                    Most significant projects:
-                    <ul>
-                        <li>Driven deprecation of hard-coded checks in favor of robust, fully dynamic permissions' system.
-                            Worked closely with consumer, internal audit, and security teams to enable company-wide adoption.
-                            Developed tools and best practices enabling engineers.
-                            <em>Key results:</em> enabled consumer teams to serve complex, high value customers.</li>
-                        <li>Requirements gathering, design and implementation of Cerberus, Eventbrite's new generation
-                            Authentication, Authorization and Identification service driving the new permissions system.
-                            Coordinated with SRE and BDRE on SLA/SLO budgets & monitoring for this mission critical system.
-                            <em>Key results:</em> receiving most traffic, Cerberus is the most stable and reliable of Eventbrite's services.</li>
-                        <li>Design, implementation and enabling adoption of PySOA, in-house SOA bus, which enabled migration
-                            of monolith into service oriented architecture.
-                            <em>Key results:</em> remote service call latency reduced from 20-30ms to 1-2ms, while also enabling
-                            multiplexing. About 70% of the monolith code migrated into microservices.</li>
-                        <li>Developed Dilithium, in-house event-sourcing based on parsing MySQL binlog, using rules to
-                            generate high-level events from row level changes. Productionized prototype, making it resilient and
-                            scalable. <em>Key results:</em> enabled teams to use with ease, making service robust enough to withstand
-                            on-sales generating in excess of 5,000 updates a second, absorbing the peaks into Kafka, thus not
-                            overwhelming consumers.</li>
-                        <li>In Architecture Guild, authored architectural proposals and engineering best practices, driving their
-                            approval and adoption throughout the organization</li>
-                    </ul>
+                    move faster.
                 </p>
+                <p>
+                    Most significant projects:
+                </p>
+                <ul>
+                    <li>Driven deprecation of hard-coded checks in favor of robust, fully dynamic permissions' system.
+                        Worked closely with consumer, internal audit, and security teams to enable company-wide adoption.
+                        Developed tools and best practices enabling engineers.
+                        <em>Key results:</em> enabled consumer teams to serve complex, high value customers.</li>
+                    <li>Requirements gathering, design and implementation of Cerberus, Eventbrite's new generation
+                        Authentication, Authorization and Identification service driving the new permissions system.
+                        Coordinated with SRE and BDRE on SLA/SLO budgets & monitoring for this mission critical system.
+                        <em>Key results:</em> receiving most traffic, Cerberus is the most stable and reliable of Eventbrite's services.</li>
+                    <li>Design, implementation and enabling adoption of PySOA, in-house SOA bus, which enabled migration
+                        of monolith into service oriented architecture.
+                        <em>Key results:</em> remote service call latency reduced from 20-30ms to 1-2ms, while also enabling
+                        multiplexing. About 70% of the monolith code migrated into microservices.</li>
+                    <li>Developed Dilithium, in-house event-sourcing based on parsing MySQL binlog, using rules to
+                        generate high-level events from row level changes. Productionized MVP, making it resilient and
+                        scalable. <em>Key results:</em> enabled teams to use with ease, making service robust enough to withstand
+                        on-sales generating in excess of 5,000 updates a second, absorbing the peaks into Kafka, thus not
+                        overwhelming consumers.</li>
+                    <li>In Architecture Guild, authored architectural proposals and engineering best practices, driving their
+                        approval and adoption throughout the organization</li>
+                </ul>
+                
             </div>
 
             <div class="experience pagebreak">
@@ -72,12 +74,12 @@
     
                 <p>
                     Responsible for Layar's AWS back-ends for mobile Augmented Reality app and web based Layar Creator:
-                    <ul>
-                        <li>Designed and implemented vertically and horizontally scalable architecture for visual search. I have
-                            used an asynchronous server (Tornado) to scale-out otherwise single-process Visual Search Engine.</li>
-                        <li>Decoupled services using SQS and Twisted.</li>
-                    </ul>
                 </p>
+                <ul>
+                    <li>Designed and implemented scalable architecture for visual search. Used an asynchronous server (Tornado) to scale-out otherwise single-process Visual Search Engine.</li>
+                    <li>Decoupled services using SQS and Twisted.</li>
+                </ul>
+ 
             </div>
 
             <div class="experience">
@@ -119,8 +121,7 @@
                     Integrating and processing data from multiple real-time sources for real time analysis and risk management at
                     Santander's investment banking division.<br/>
                     <em>Key results:</em> Developed better job distribution/aggregation algorithm used on blade servers, which
-                    significantly reduced latency for small jobs, while at same time reduced total run time 12-fold for big
-                    portfolios.
+                    significantly reduced latency, while at same time reduced total run time 12-fold.
                 </p>
             </div>
 
