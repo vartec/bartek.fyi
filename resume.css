@@ -148,7 +148,9 @@ span.dates:before {
         background-color: inherit;
         color: inherit;   
         padding: 0;
-        padding-bottom: 1rem;
+        margin-block-end: .1rem;
+        border-style: none none double none;
+        border-width: 0.2rem;
     }
 
     .header .name-role {
@@ -158,6 +160,13 @@ span.dates:before {
     .header .name-role .role {
         font-size: .8em;
         padding-top: .2em;
+    }
+
+    .header .name-role .print-only{
+        font-size: .7rem;
+        font-style: italic;
+        font-weight: 200;
+        display: block;
     }
 
     div.contacts {
