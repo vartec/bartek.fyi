@@ -62,9 +62,9 @@
                     <li>Migrated a variety of different task scheduling systems to K8s CronJobs.
                         <br/><em class="key-results">Key results:</em> Single source of truth for task scheduling previously spread accross 5 different systems.</li>
                     <li>Actively developing async intra-service communication Hawker, an in-house messaging bus build on AWS SNS, SQS, Lambda, Kinesis and Google Protobufs. 
-                        <br/><em class="key-results">Key results:</em> enabled teams to interoperate through well defined protocols, deprecated anti-pattern of using Sidekiq for cross-service comms.</li>
+                        <br/><em class="key-results">Key results:</em> Enabled teams to interoperate through well defined protocols, deprecated anti-pattern of using Sidekiq for cross-service comms.</li>
                     <li>Leveraged intra-service RPC using Twirp. 
-                        <br/><em class="key-results">Key results:</em>Standarized, well defined RPC increased teams interoperability.</li>
+                        <br/><em class="key-results">Key results:</em> Standarized, well defined RPC increased teams interoperability.</li>
                     <li>Driven implementation, best practices, and adoption of concurrency limiters, rate limiters, and circuit breakers.
                         <br/><em class="key-results">Key results:</em> Blast radii of services has been significantly reduced, eliminating most of the cascading failures. As a result incident recovery was quicker and easier.</li>
                     <li>Promoting best practices and implementing shared-nothing architecture, particulary for the Redis databases and caches. 
@@ -91,19 +91,19 @@
                     <li>Driven deprecation of hard-coded checks in favor of robust, fully dynamic permissions' system.
                         Worked closely with consumer, internal audit, and security teams to enable company-wide adoption.
                         Developed tools and best practices enabling engineers.
-                        <br/><em class="key-results">Key results:</em> enabled consumer teams to serve complex, high value customers.</li>
+                        <br/><em class="key-results">Key results:</em> Enabled consumer teams to serve complex, high value customers.</li>
                     <li>Requirements gathering, design and implementation of Cerberus, Eventbrite's new generation
                         Authentication, Authorization and Identification service driving the new permissions system.
                         Coordinated with SRE and BDRE on SLA/SLO budgets & monitoring for this mission critical system.
-                        <br/><em class="key-results">Key results:</em> receiving most traffic, Cerberus is the most stable and reliable of Eventbrite's services.</li>
+                        <br/><em class="key-results">Key results:</em> Receiving most traffic, Cerberus is the most stable and reliable of Eventbrite's services.</li>
                     <li>Design, implementation and enabling adoption of PySOA, in-house SOA bus, which enabled migration
                         of monolith into service oriented architecture.
-                        <br/><em class="key-results">Key results:</em> remote service call latency reduced from 20-30ms to 1-2ms, while also enabling
+                        <br/><em class="key-results">Key results:</em> Remote service call latency reduced from 20-30ms to 1-2ms, while also enabling
                         multiplexing. About 70% of the monolith code migrated into microservices.</li>
                     <li>Developed Dilithium, in-house event-sourcing based on parsing MySQL binlog, using rules to
                         generate high-level events from row level changes. Productionized MVP, making it resilient and
                         scalable. 
-                        <br/><em class="key-results">Key results:</em> enabled teams to use it with ease, making service robust enough to withstand
+                        <br/><em class="key-results">Key results:</em> Enabled teams to use it with ease, making service robust enough to withstand
                         on-sales generating in excess of 5,000 updates a second, absorbing the peaks into Kafka, thus not
                         overwhelming consumers.</li>
                     <li>In Architecture Guild, authored architectural proposals and engineering best practices, driving their
@@ -139,7 +139,7 @@
                     In charge of 2 billion image/video files with 300K daily new uploads using in-house solutions on top of
                     commodity hardware. Designed and implemented an algorithm which guaranteed files would be replicated on
                     machines not in physical proximity.
-                    <br/><em class="key-results">Key results:</em> the new algorithm not only guaranteed more resilience, but also improved load distribution,
+                    <br/><em class="key-results">Key results:</em> The new algorithm not only guaranteed more resilience, but also improved load distribution,
                     significantly reducing latency while serving hot files.
                 </p>
             </div>
