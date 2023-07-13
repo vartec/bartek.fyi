@@ -32,39 +32,47 @@
 
             <div class="skills">
             <h1>Professional Skills</h1>
-            <p>Seasoned engineer with 20+ years of programming experience, 15&nbsp;years building and scaling high-traffic distributed services. 
-            Self-starter, eager to learn new technologies and programming languages, and take on new challenges
+            <p>Seasoned engineer with 25+ years of programming experience, 20&nbsp;years building and scaling high-traffic distributed services. 
+            <br/>Self-starter, eager to learn new technologies and programming languages, and take on new challenges
             <p>
-            <em>AWS, microservices architecture, Python, Django, Kafka, Redis, Ruby, MySQL, resilience, scalability</em> and more.
+            <em>AWS, microservices architecture, Python, Django, Kafka, Redis, Ruby, MySQL, resilience, scalability, K8s</em> and more.
             
             <p>Languages spoken: <em>English</em> (fluent), <em>Spanish</em> (fluent), <em>Polish</em> (native)</p>
             </div>
             <h1>Work Experience</h1>
 
-            <div class="experience">
+            <div class="experience pagebreak">
                 <h2>
-                    <span class="position">Senior Software Engineer (L5)</span> at
+                    <span class="position">Senior Software Engineer II (L5)</span> at
                     <span class="company"><a href="https://chime.com/">Chime</a></span>, <span class="location">San Francisco, CA</span>
-                    <span class="dates">May 2020 &mdash; <em>present</em></span>
+                    <span class="dates">May 2020 &mdash; <i>present</i></span>
                 </h2>
     
                 <p>
-                    Currently on <em>Application Infrastructure team</em>, building tools enabling our engineers to make their services more resilient and scalable.
+                    Currently on <em>Application Foundry team</em>, a back-end team adjacent to infrastructure, building tools enabling our engineers to make their services more resilient and scalable. 
+                    Workload includes writing application code, but also setting up infrastructure and observability. 
+                    Significant part of my time is also dedicated to technical writing, such as architectural proposals, documentation, evangelizing best practices, incident rubooks, post-mortem analisis, etc.
                     <br/>
-                    In the past on AWS Migration team, responsible for a succesful migration of the whole of Chime's infrastructure from RackSpace to AWS EKS and a variety of AWS hosted services.
+                    Previously I was past of <em>AWS Migration</em> team, a cross-functional "tiger" teamp responsible for a succesful migration of the entirety of Chime's infrastructure from RackSpace to AWS EKS and a variety of AWS hosted services.
                 </p>
                 <p>
-                    Responsibilities:
+                    Recent projects and responsibilities:
                 </p>
                 <ul>
-                    <li>Driven deprecation of hard-coded checks in favor of robust, fully dynamic permissions' system.
-                        Worked closely with consumer, internal audit, and security teams to enable company-wide adoption.
-                        Developed tools and best practices enabling engineers.
-                        <em class="key-results">Key results:</em> enabled consumer teams to serve complex, high value customers.</li>
+                    <li>Migrated a variety of different task scheduling systems to K8s CronJobs.
+                        <br/><em class="key-results">Key results:</em> Single source of truth for task scheduling previously spread accross 5 different systems.</li>
+                    <li>Actively developing async intra-service communication Hawker, an in-house messaging bus build on AWS SNS, SQS, Lambda, Kinesis and Google Protobufs. 
+                        <br/><em class="key-results">Key results:</em> enabled teams to interoperate through well defined protocols, deprecated anti-pattern of using Sidekiq for cross-service comms.</li>
+                    <li>Leveraged intra-service RPC using Twirp. 
+                        <br/><em class="key-results">Key results:</em>Standarized, well defined RPC increased teams interoperability.</li>
+                    <li>Driven implementation, best practices, and adoption of concurrency limiters, rate limiters, and circuit breakers.
+                        <br/><em class="key-results">Key results:</em> Blast radii of services has been significantly reduced, eliminating most of the cascading failures. As a result incident recovery was quicker and easier.</li>
+                    <li>Promoting best practices and implementing shared-nothing architecture, particulary for the Redis databases and caches. 
+                        <br/><em class="key-results">Key results:</em> Moved Chime away from data-fuse anti-pattern, significantly increasing resilience.</li>
                 </ul>
-                
             </div>
-            <div class="experience pagebreak">
+            <h1 class="print-only">Work Experience <span class="continued">(continued)</span></h1>
+            <div class="experience ">
                 <h2>
                     <span class="position">Senior Software Engineer II</span> at
                     <span class="company"><a href="https://eventbrite.com/">Eventbrite</a></span>, <span class="location">San Francisco, CA</span>
@@ -83,18 +91,19 @@
                     <li>Driven deprecation of hard-coded checks in favor of robust, fully dynamic permissions' system.
                         Worked closely with consumer, internal audit, and security teams to enable company-wide adoption.
                         Developed tools and best practices enabling engineers.
-                        <em class="key-results">Key results:</em> enabled consumer teams to serve complex, high value customers.</li>
+                        <br/><em class="key-results">Key results:</em> enabled consumer teams to serve complex, high value customers.</li>
                     <li>Requirements gathering, design and implementation of Cerberus, Eventbrite's new generation
                         Authentication, Authorization and Identification service driving the new permissions system.
                         Coordinated with SRE and BDRE on SLA/SLO budgets & monitoring for this mission critical system.
-                        <em class="key-results">Key results:</em> receiving most traffic, Cerberus is the most stable and reliable of Eventbrite's services.</li>
+                        <br/><em class="key-results">Key results:</em> receiving most traffic, Cerberus is the most stable and reliable of Eventbrite's services.</li>
                     <li>Design, implementation and enabling adoption of PySOA, in-house SOA bus, which enabled migration
                         of monolith into service oriented architecture.
-                        <em class="key-results">Key results:</em> remote service call latency reduced from 20-30ms to 1-2ms, while also enabling
+                        <br/><em class="key-results">Key results:</em> remote service call latency reduced from 20-30ms to 1-2ms, while also enabling
                         multiplexing. About 70% of the monolith code migrated into microservices.</li>
                     <li>Developed Dilithium, in-house event-sourcing based on parsing MySQL binlog, using rules to
                         generate high-level events from row level changes. Productionized MVP, making it resilient and
-                        scalable. <em class="key-results">Key results:</em> enabled teams to use it with ease, making service robust enough to withstand
+                        scalable. 
+                        <br/><em class="key-results">Key results:</em> enabled teams to use it with ease, making service robust enough to withstand
                         on-sales generating in excess of 5,000 updates a second, absorbing the peaks into Kafka, thus not
                         overwhelming consumers.</li>
                     <li>In Architecture Guild, authored architectural proposals and engineering best practices, driving their
@@ -102,8 +111,6 @@
                 </ul>
                 
             </div>
-
-            <h1 class="print-only">Work Experience <span class="continued">(continued)</span></h1>
             <div class="experience ">
                 <h2>
                     <span class="position">Back-end Developer</span> at
@@ -121,7 +128,7 @@
  
             </div>
 
-            <div class="experience">
+            <div class="experience pagebreak">
                 <h2>
                     <span class="position" title="Back-end SWE on Core Team">Core Developer</span> at
                     <span class="company"><a href="https://en.wikipedia.org/wiki/Hyves">Hyves</a></span>, <span class="location">Amsterdam, The Netherlands</span>
@@ -132,11 +139,11 @@
                     In charge of 2 billion image/video files with 300K daily new uploads using in-house solutions on top of
                     commodity hardware. Designed and implemented an algorithm which guaranteed files would be replicated on
                     machines not in physical proximity.
-                    <em class="key-results">Key results:</em> the new algorithm not only guaranteed more resilience, but also improved load distribution,
+                    <br/><em class="key-results">Key results:</em> the new algorithm not only guaranteed more resilience, but also improved load distribution,
                     significantly reducing latency while serving hot files.
                 </p>
             </div>
-
+            <h1 class="print-only">Work Experience <span class="continued">(continued)</span></h1>
             <div class="experience">
                 <h2>
                     <span class="position" title="Spanish equivalent of L3 SWE">Software Analyst</span> at
