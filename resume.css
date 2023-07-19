@@ -141,6 +141,11 @@ span.dates:before {
 }
 
 
+.calendly-badge-widget { 
+    left: 80% !important; 
+    margin-left: -100px!important; 
+}
+
 
 @media print
 {    
@@ -148,10 +153,14 @@ span.dates:before {
         font-family: Optima, Calibri, Candara, Segoe, "Segoe UI", Arial, sans-serif;
     }
     
-    .download, .download *
-    {
+    .download, .download * {
         display: none !important;
     }
+
+    .calendly-badge-widget { 
+        display: none !important;
+    }
+    
     .header {
         background-color: inherit;
         color: inherit;   
